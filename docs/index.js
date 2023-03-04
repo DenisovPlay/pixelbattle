@@ -177,7 +177,6 @@ function changeColor(color) {
     el.addEventListener('click', e => {
         e.preventDefault();
 
-        if (!userToken) return alert('Вы не авторизованы!');
 
         if (connected) fetch(`${hostname}/pixels/put`, {
             method: 'POST',
